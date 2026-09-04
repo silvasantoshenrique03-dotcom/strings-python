@@ -7,7 +7,7 @@ print(texto[3])
 print(texto[-1])
 
 # erro ao tentar atribuir um valor a tupla
-texto[3] = 't'
+#texto[3] = 't'
 
 # e imutavel, mas posso trocar o valor inteiro
 texto = 'pythonia'
@@ -15,16 +15,16 @@ print(texto)
 
 # .find - retorna o indice do texto desejado
 #obs. : retorna -1 caso nao encontre o texto
-print(texto,find('n')) #5
-print(texto,find('f')) #-1
+print(texto.find('n')) #5
+print(texto.find('f')) #-1
 
 # .index - retorna o indice do texto desejado
 #obs. : retorna ValieError caso nao encontre o texto
-print(texto,index('n')) #5
+print(texto.index('n')) #5
 #print(texto,index('f)) #-1
 
 # replace - substui valor na string
-novo_texto= texto,replace('P', 'p')
+novo_texto= texto.replace('P', 'p')
 print(novo_texto)
 print(texto)
 
@@ -37,10 +37,10 @@ for letra in texto:
 
 
 if 'h' in texto:
-    print(texto,index('h'))
+    print(texto.index('h'))
 else:
     print('nao encontrada')
 
 # alicing - retorna uma substring com indice  do começo e fim
-subtexto = print(frase[9:15])
 frase = 'a rápida raposa marrom pula sobre o cachorro preguiçoso'
+subtexto = print(frase[9:15])
